@@ -1,1 +1,1 @@
-A aula trata sobre GitHub e Git, são coisas diferentes, Git é a tecnologia por trás do GitHub, já GitHub é como uma biblioteca onde as pessoas se encontram utilizando o Git para salvar os códigos.
+A aula trata sobre GitHub e Git, são coisas diferentes, Git é a tecnologia por trás do GitHub, já GitHub é como uma biblioteca onde as pessoas se encontram utilizando o Git para salvar os códigos. Descreveram como criar uma conta no GitHub, após isso começaram a explicar os comandos básicos e princípios para a utilização.
