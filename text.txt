@@ -1,1 +1,4 @@
 A aula trata sobre GitHub e Git, são coisas diferentes, Git é a tecnologia por trás do GitHub, já GitHub é como uma biblioteca onde as pessoas se encontram utilizando o Git para salvar os códigos. Descreveram como criar uma conta no GitHub, após isso começaram a explicar os comandos básicos e princípios para a utilização. Ordem de utilização: Escolher onde será o repositório, seja a pasta, lugar ... após isso, botão direito e GitBash, no Terminal do Bash, utilizar git init (Isso iniciará um repositório). git add, é o comando utilizado para adicionar o arquivo que será mudado ou irá para o repositório (git add . [para todos] git add "nome arquivo"). Após isso é preciso dizer sobre a mudança no arquivo, e para isso utiliza-se git commit -m "Exemplo de Mudanças...". Por fim git status, mostra o status da branch, se tem coisa nova para commitar, se está tudo certo etc...
+
+Para conectar o repositório local com o repositório online
+git remote add origin "HTTPS" ou "SSH"
