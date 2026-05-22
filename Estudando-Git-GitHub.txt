@@ -1,0 +1,46 @@
+- git status
+Mostra os status: em qual lugar da branch eu estou, arquivos com alterações, excluídos, commits feitos.
+
+- git add <arquivo>
+Adiciona um arquivo para commit
+
+Para commitar todos os arquivos que tiveram alguma alteração ou deletados ---> git add ./
+
+git commit -m <'Mensagem de commit'>
+
+- git log
+Mostra o histórico de todos os commits já feitos.
+
+- git checkout <hash de um commit>
+Retorna os arquivos de volta no estado que estava no momento do commit
+
+git checkout main 
+Retorna para o estado que estava a branch
+
+git remote add origin <link>
+
+git push -u <origin>(ALIAS que se refere ao link) <main>(branch principal)
+
+- Branching
+Faz uma cópia da main, e permite que as pessoas desenvolvam algo novo / testem, sem afetar a main. Ao final, permite que a branch seja merged.
+
+- git branch <nome-da-branch>
+Cria uma nova branch.
+
+- git checkout <nome-da-branch>
+Vai para a branch que eu especifiquei.
+
+Caso eu adicione um -b antes do nome, ele cria e vai diretamente para a nova branch criada
+
+Importante: a branch criada, é referente ao local em que estou criando a branch. Ou seja, caso eu esteja na branch 'outra-branch', e rode o comando de branching, o código e arquivos herdados serão referentes ao local que criei. Ou seja, caso na branch 'funcionalidade-x', tenha  uma coisa importante que eu precise, se eu criar na 'outra-branch' eu não pego essa parte.
+
+Para resolver isso basta: 
+1- Mover para o local desejado e criar a partir de lá
+
+2- Especificar ao criar a nova branch
+- git branch <nome-da-branch> <source>
+
+Como escrever um bom commit
+- Usar imperativo
+- O que vai acontecer se eu adicionar isso ...
+Exemplo: Adicionado atualização que permite o sistema fazer tal ...
