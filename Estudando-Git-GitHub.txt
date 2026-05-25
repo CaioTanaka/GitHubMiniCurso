@@ -3,7 +3,6 @@ Mostra os status: em qual lugar da branch eu estou, arquivos com alterações, e
 
 - git add <arquivo>
 Adiciona um arquivo para commit
-
 Para commitar todos os arquivos que tiveram alguma alteração ou deletados ---> git add ./
 
 git commit -m <'Mensagem de commit'>
@@ -47,3 +46,12 @@ Como escrever um bom commit
 - Usar imperativo
 - O que vai acontecer se eu adicionar isso ...
 Exemplo: Adicionado atualização que permite o sistema fazer tal ...
+
+- git push -u main <nome-da-branch>
+Permite que de push na branch, e que comece a fazer o track da branch pelo GitHub. (Depois só é preciso dar git push)
+
+- git pull
+Puxa todas as alterações que aconteceram na branch / repositório
+
+- Merge Conflicts
+--apenas para teste
