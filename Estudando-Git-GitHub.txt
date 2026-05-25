@@ -14,7 +14,7 @@ Mostra o histórico de todos os commits já feitos.
 - git checkout <hash de um commit>
 Retorna os arquivos de volta no estado que estava no momento do commit
 
-git checkout main 
+git checkout main
 Retorna para o estado que estava a branch
 
 git remote add origin <link>
@@ -23,6 +23,9 @@ git push -u <origin>(ALIAS que se refere ao link) <main>(branch principal)
 
 - Branching
 Faz uma cópia da main, e permite que as pessoas desenvolvam algo novo / testem, sem afetar a main. Ao final, permite que a branch seja merged.
+
+- git branch -m <novo_nome>
+Permite mudar o nome da branch
 
 - git branch <nome-da-branch>
 Cria uma nova branch.
