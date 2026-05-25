@@ -54,4 +54,35 @@ Permite que de push na branch, e que comece a fazer o track da branch pelo GitHu
 Puxa todas as alterações que aconteceram na branch / repositório
 
 - Merge Conflicts
---apenas para teste
+Método para resolver (Exemplo: conflito em um arquivo, 2 pessoas com arquivos diferentes)
+  - Retorne para a main <git checkout main>
+  - Puxe todas as alterações da main <git pull origin main>
+  - Retorne para a sua branch <git checkout sua-branch>
+  - Merge a main na sua branch <git merge main>
+  - Após isso, muitos editores de códigos / IDE tem uma integração com git, exemplo WebStorm de JavaScript, que permite resolver esses conflitos de um modo fácil.
+  - Faça um add, e por fim commit e push, para finalizar o pull request.
+
+- Comandos mais avançadas de Git
+Comandos que permitem manipulações mais precisas do seu repositório
+- git reset
+    -Soft Reset: Retorna para o commit desejado, e as mudanças ficam "commitadas", salvas, "staged"
+      git reset --soft <hash-commit>
+
+    -Mixed Reset: Retorna para o commit desejado, e as mudanças não ficam "commitadas", é preciso dar add ./
+      git reset <hash-commit>
+
+    -Hard Reset: Retorna para o commit desejado, e as mudanças são totalmente apagadas
+      git reset --hard <hash-commit>
+
+- git revert
+  Permite  retornar para um commit, mas não apaga os  commits que foram feitos após o commit
+      git revert <hash-commit>
+      git revert --continue (caso tenha algum merge conflit)
+
+- git stash
+  Permite temporariamente salvar todas as alterações "staged" e não "staged", no caso tudo que foi e não foi "commitado"
+      git stash
+
+      git stash list - Mostra o nome de todos os "stash" poder retornar depois
+
+      git stash apply <stash-name>
