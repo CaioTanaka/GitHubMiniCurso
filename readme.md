@@ -10,4 +10,4 @@
 * git push origin main
 * git checkout main
 
-
+    Está Branch é justamente para ficar diferente da main, e não ter o merge com ela. apenas para teste.
