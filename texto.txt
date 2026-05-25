@@ -1,0 +1,6 @@
+Hello Git!
+
+Estou adicionando este arquivo em uma branch, para realizar um pull request no meu GitHub.
+
+Além disso, estou testando os comandos referentes a Git
+
