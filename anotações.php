@@ -365,9 +365,44 @@ if(isset($_POST["login"])){
     if(empty($numFilhos)){
         echo "Insira um número válido";
     }
-    
-
-
-// - Função Include()
 }
+
+
+// - Função Include() // Pode ser o nome do arquivo ou o file path dele;
+// Essa função permite que partes sejam reutilizadas. Ex: um rodapé, assim é possível importar o arquivo e utilizar a configuração já escrita.
+/*<?php
+include("site.html");
+?>
+*/
+
+
+
+// - Website Cookies ---> Os cookies são informações sobre o usuário, guardado no navegador, que permite anúncios, preferências de navegação etc...
+// Dicionário
+
+setcookie("comidaFavorita" , "maná" , time() + (86400 * 2) , "/");
+setcookie("corFavorita" , "Azul" , time() + (86400 * 5) , "/");
+setcookie("endereco" , "Paraná" , time() + (86400 * 4) , "/");
+
+// para deletar, é só colocar o tempo para -0
+
+foreach($_COOKIE as $chave => $valor){
+    echo "{$chave} =  {$valor}<br>";
+}
+
+if(isset($_COOKIE["comidaFavorita"])){
+    echo "Restaurantes recomendados que servem {$_COOKIE["comidaFavorita"]}";
+}
+
+
+
+// - Session - Super Global Variable para guardar informações de um usuário, com objetivo de guardar para utilizar em outras páginas. Ex o login de usuário
+session_start(); // após isso pode iniciar o HTML
+
+// Arquivo home.php
+session_start();
+$_SESSION["usuario"] = "admin";
+$_SESSION["senha"] = "1234";
+
+
 ?>
